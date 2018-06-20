@@ -11,8 +11,9 @@ int lines = 0;
 [\n]		{chars++; lines++;}
 .			{chars++;}
 %%
-main() {
+int main() {
 	setlocale(LC_NUMERIC, "");
 	yylex();
 	printf("Chars:\t%'d\nWords:\t%'d\nLines\t%'d\n", chars, words, lines);
+	return 0;
 }

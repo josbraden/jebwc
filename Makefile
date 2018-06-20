@@ -3,4 +3,4 @@ jebwc: jebwc.yy.c
 jebwc.yy.c: jebwc.l
 	flex -o jebwc.yy.c jebwc.l
 clean:
-	rm -f jebwc
+	rm -f jebwc jebwc.yy.c

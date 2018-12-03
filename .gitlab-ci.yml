@@ -1,0 +1,6 @@
+build:
+  before_script"
+    - apt-get update -qq
+    - apt-get install -y -qq gcc flex
+  script:
+    - make

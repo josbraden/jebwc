@@ -13,4 +13,4 @@ build:
     expire_in: 8 hour
 test:
   needs: ["build"]
-  script: jebwc < README.md
+  script: ./jebwc < README.md
